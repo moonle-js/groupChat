@@ -104,5 +104,5 @@ setInterval(function(){
           }
       })
     }catch(error){
-      console.log('nothing to show')
+      console.log('nothing to show')}
 }, 1000)
