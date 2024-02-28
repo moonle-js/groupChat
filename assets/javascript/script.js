@@ -96,10 +96,10 @@ sendMesage1.addEventListener('click', function(){
 
 
 
-window.onload = function(){
+window.onload = setInterval(function(){
     get(child(ref(db), "users/"+"chat")).then(cavab => {
         if(cavab.exists){
             chat.innerHTML = `${cavab.val().wholeMessage}`
         }
     })
-}
+}, 1000)
